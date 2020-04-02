@@ -1,10 +1,11 @@
 
 fun main(args: Array<String>) {
     val input = arrayOf(4,1,2,1,2).toIntArray()
-    println(Solution().singleNumber(input))
+    println(Leetcode30DayChallenge1.singleNumber(input))
 }
 
-class Solution {
+object Leetcode30DayChallenge1 {
+
     fun singleNumber(nums: IntArray): Int {
         val hashMap = mutableMapOf<Int, Int>()
 
@@ -16,3 +17,5 @@ class Solution {
         return hashMap.filterValues { it == 1 }.keys.first()
     }
 }
+
+
