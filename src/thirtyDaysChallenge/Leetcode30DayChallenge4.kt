@@ -1,3 +1,5 @@
+package thirtyDaysChallenge
+
 fun main(args: Array<String>) {
     val input = intArrayOf(1)
     Leetcode30DayChallenge4.moveZeroes(input)

@@ -1,4 +1,4 @@
-
+package thirtyDaysChallenge
 fun main(args: Array<String>) {
     val input = 19
     println(Leetcode30DayChallenge2.isHappy(input))
@@ -9,7 +9,7 @@ object Leetcode30DayChallenge2 {
     fun isHappy(n: Int): Boolean {
         var digits = destruct(n)
         repeat(10000) {
-            var sum = digits.map { it * it }.sum()
+            val sum = digits.map { it * it }.sum()
 
             if (sum == 1) {
                 return true

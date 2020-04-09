@@ -1,28 +1,16 @@
+package thirtyDaysChallenge
+
+import utils.ListNode
+import utils.toListNode
+
 fun main(args: Array<String>) {
-//    val input = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8).toListNode()
-//    val input = intArrayOf(1,2,3,4,5).toListNode()
+//    val input = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8).`30daychallenge`.toListNode()
+//    val input = intArrayOf(1,2,3,4,5).`30daychallenge`.toListNode()
     val input = intArrayOf(1,2,3,4,5,6).toListNode()
     println(Leetcode30DayChallenge8.middleNodeSolution2(input))
 }
 
-private fun IntArray.toListNode(): Leetcode30DayChallenge8.ListNode {
-    val head = Leetcode30DayChallenge8.ListNode(this[0])
-    nextNode(head, copyOfRange(1, size))
-    return head
-}
-
-fun nextNode(node: Leetcode30DayChallenge8.ListNode?, values: IntArray) {
-    if (values.isNotEmpty()) {
-        node?.next = Leetcode30DayChallenge8.ListNode(values[0])
-        nextNode(node?.next, values.copyOfRange(1, values.size))
-    }
-}
-
 object Leetcode30DayChallenge8 {
-
-    data class ListNode(var `val`: Int) {
-        var next: ListNode? = null
-    }
 
     // O(N) time, O(1) space
     fun middleNodeSolution2(head: ListNode?): ListNode? {

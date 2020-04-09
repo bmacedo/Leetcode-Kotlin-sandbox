@@ -1,3 +1,5 @@
+package thirtyDaysChallenge
+
 fun main(args: Array<String>) {
 //    val input = emptyArray<String>()
 //    val input = arrayOf("cab","tin","pew","duh","may","ill","buy","bar","max","doc")

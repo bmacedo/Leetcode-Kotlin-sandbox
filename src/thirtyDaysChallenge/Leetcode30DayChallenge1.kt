@@ -1,4 +1,4 @@
-
+package thirtyDaysChallenge
 fun main(args: Array<String>) {
     val input = arrayOf(4,1,2,1,2).toIntArray()
     println(Leetcode30DayChallenge1.singleNumber(input))

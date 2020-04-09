@@ -1,3 +1,5 @@
+package thirtyDaysChallenge
+
 fun main(args: Array<String>) {
 //    val input = intArrayOf(7,1,5,3,6,4)
 //    val input = intArrayOf(1,2,3,4,5)
