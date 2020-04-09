@@ -10,14 +10,14 @@ fun IntArray.toListNode(): ListNode {
     return head
 }
 
-fun ListNode?.println() {
+fun ListNode?.toList(): List<Int> {
     var currentNode = this
     val resultingList = mutableListOf<Int>()
     while (currentNode != null) {
         resultingList.add(currentNode.`val`)
         currentNode = currentNode.next
     }
-    println(resultingList)
+    return resultingList
 }
 
 fun nextNode(node: ListNode?, values: IntArray) {

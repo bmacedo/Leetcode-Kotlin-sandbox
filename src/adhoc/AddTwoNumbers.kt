@@ -1,7 +1,7 @@
 package adhoc
 
 import utils.ListNode
-import utils.println
+import utils.toList
 import utils.toListNode
 
 /**
@@ -12,9 +12,9 @@ import utils.toListNode
  * You may assume the two numbers do not contain any leading zero, except the number 0 itself.
  */
 fun main(args: Array<String>) {
-    val input1 = intArrayOf(9,9,9,9).toListNode()
-    val input2 = intArrayOf(9,9,9,9).toListNode()
-    AddTwoNumbers.addTwoNumbers(input1, input2).println()
+    val input1 = intArrayOf(9, 9, 9, 9).toListNode()
+    val input2 = intArrayOf(9, 9, 9, 9).toListNode()
+    println(AddTwoNumbers.addTwoNumbers(input1, input2).toList())
 }
 
 object AddTwoNumbers {
