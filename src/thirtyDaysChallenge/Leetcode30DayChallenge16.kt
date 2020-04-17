@@ -1,5 +1,7 @@
 package thirtyDaysChallenge
 
+import java.util.*
+
 
 /**
  * Given a string containing only three types of characters: '(', ')' and '*',
@@ -14,24 +16,92 @@ package thirtyDaysChallenge
  * -    An empty string is also valid.
  */
 fun main(args: Array<String>) {
-    val input = "(*))"
-//    val input = "acbb"
+    val input = "(*))("
     println(Leetcode30DayChallenge16.checkValidString(input))
 }
 
 object Leetcode30DayChallenge16 {
 
     fun checkValidString(s: String): Boolean {
-        val regex = "c*((a|c)c*(b|c))*c*".toRegex()
-        return s.map {
-            when (it) {
-                '(' -> 'a'
-                ')' -> 'b'
-                '*' -> 'c'
-                else -> throw IllegalArgumentException()
+        var levelCount = 0
+        s.forEach { char ->
+            when (char) {
+                '(', '*' -> levelCount++
+                else -> levelCount--
             }
-        }.joinToString("").matches(regex)
+
+            if (levelCount < 0) return false
+        }
+
+        levelCount = 0
+        s.reversed().forEach { char ->
+            when (char) {
+                ')', '*' -> levelCount++
+                else -> levelCount--
+            }
+
+            if (levelCount < 0) return false
+        }
+        return true
     }
+
+//    fun checkValidString(s: String): Boolean {
+//        val sums = mutableListOf<Int>()
+//        populateSum(s, sums)
+//        return sums.contains(0)
+//    }
+//
+//    private fun populateSum(s: String, sums: MutableList<Int>) {
+//
+//        val asteriskIndex = s.indexOf('*')
+//
+//        if (asteriskIndex >= 0) {
+//            val s1 = s.replaceFirst('*', '(')
+//            populateSum(s1, sums)
+//            val s2 = s.replaceFirst('*', ')')
+//            populateSum(s2, sums)
+//            val s3 = StringBuilder(s).deleteCharAt(asteriskIndex).toString()
+//            populateSum(s3, sums)
+//        } else {
+//            var sum = 0
+//            s.forEach { char ->
+//                when (char) {
+//                    '(' -> sum += 1
+//                    ')' -> sum -= 1
+//                }
+//                if (sum < 0) return
+//            }
+//            sums.add(sum)
+//        }
+//
+//
+//
+//
+//        when (s[0]) {
+//            '(' -> for (i in sums.indices) sums[i] += 1
+//            ')' -> for (i in sums.indices) sums[i] -= 1
+//            '*' -> {
+//                val lastSum = sums.last()
+//                sums.add(lastSum)
+//                populateSum('(' + s.substring(1), sums)
+//                sums.add(lastSum)
+//                populateSum(')' + s.substring(1), sums)
+//            }
+//        }
+//        populateSum(s.substring(1), sums)
+//    }
+
+//    fun checkValidString(s: String): Boolean {
+//        val regex = "c*((a|c)c*(b|c))*c*".toRegex()
+//        return s.map {
+//            when (it) {
+//                '(' -> 'a'
+//                ')' -> 'b'
+//                '*' -> 'c'
+//                else -> throw IllegalArgumentException()
+//            }
+//        }.joinToString("").matches(regex)
+//    }
 
 //    fun checkValidString(s: String): Boolean {
 //        if (s.isEmpty()) return true
