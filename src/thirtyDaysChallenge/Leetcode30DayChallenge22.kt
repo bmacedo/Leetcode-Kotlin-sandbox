@@ -33,8 +33,8 @@ object Leetcode30DayChallenge22 {
         var preSum = 0
         var count = 0
 
-        for (i in 0 until nums.size) {
-            preSum += nums[i]
+        for (element in nums) {
+            preSum += element
             if (map.containsKey(preSum - k)) {
                 count += map[preSum - k]!!
             }
