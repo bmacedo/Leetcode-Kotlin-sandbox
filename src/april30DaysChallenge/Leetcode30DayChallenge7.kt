@@ -1,4 +1,4 @@
-package thirtyDaysChallenge
+package april30DaysChallenge
 
 fun main(args: Array<String>) {
 //    val input = intArrayOf(1,2,3)

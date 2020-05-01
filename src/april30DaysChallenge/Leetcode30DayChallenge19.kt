@@ -1,4 +1,4 @@
-package thirtyDaysChallenge
+package april30DaysChallenge
 
 
 /**
@@ -16,12 +16,6 @@ package thirtyDaysChallenge
 fun main(args: Array<String>) {
     val target = 0
     val input = intArrayOf(4, 5, 6, 7, 0, 1, 2) // expect: 4
-
-    val target2 = 3
-    val input2 = intArrayOf(4, 5, 6, 7, 0, 1, 2) // expect: -1
-
-    val target3 = 6
-    val input3 = intArrayOf(8, 1, 2, 3, 4, 5, 6, 7) // expect: 6
 
     println(Leetcode30DayChallenge19.search(input, target))
 }

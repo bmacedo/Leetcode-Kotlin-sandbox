@@ -1,4 +1,4 @@
-package thirtyDaysChallenge
+package april30DaysChallenge
 
 import utils.TreeNode
 import utils.print
@@ -68,7 +68,7 @@ object Leetcode30DayChallenge29 {
                 return Math.max(path0, path1)
             }
             currentNode?.right != null -> {
-                val path2 = currentNode.`val` + traverse(currentNode?.right, pathPossibilities)
+                val path2 = currentNode.`val` + traverse(currentNode.right, pathPossibilities)
                 pathPossibilities.add(path2)
                 return Math.max(path0, path2)
             }

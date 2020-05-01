@@ -1,4 +1,4 @@
-package thirtyDaysChallenge
+package april30DaysChallenge
 
 import java.util.*
 
@@ -15,7 +15,7 @@ import java.util.*
  *      range of the integer k is [-1e7, 1e7].
  */
 fun main(args: Array<String>) {
-    val input = intArrayOf(1, 1, 1);
+    val input = intArrayOf(1, 1, 1)
     val k = 2 // expect: 2
 
     println(Leetcode30DayChallenge22.subarraySum(input, k))

@@ -1,4 +1,4 @@
-package thirtyDaysChallenge
+package april30DaysChallenge
 fun main(args: Array<String>) {
     val input = 19
     println(Leetcode30DayChallenge2.isHappy(input))

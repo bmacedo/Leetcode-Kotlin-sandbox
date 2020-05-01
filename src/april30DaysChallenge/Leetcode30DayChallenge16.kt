@@ -1,6 +1,4 @@
-package thirtyDaysChallenge
-
-import java.util.*
+package april30DaysChallenge
 
 
 /**

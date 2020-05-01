@@ -1,4 +1,4 @@
-package thirtyDaysChallenge
+package april30DaysChallenge
 
 /**
  * Given two strings S and T, return if they are equal when both

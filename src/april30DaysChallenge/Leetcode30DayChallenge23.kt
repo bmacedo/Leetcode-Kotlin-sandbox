@@ -1,8 +1,4 @@
-package thirtyDaysChallenge
-
-import utils.BinaryMatrix
-import kotlin.math.max
-import java.util.HashMap
+package april30DaysChallenge
 
 
 /**

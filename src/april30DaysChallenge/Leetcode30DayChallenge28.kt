@@ -1,4 +1,4 @@
-package thirtyDaysChallenge
+package april30DaysChallenge
 
 import kotlin.test.assertEquals
 
@@ -16,13 +16,13 @@ import kotlin.test.assertEquals
 fun main(args: Array<String>) {
     val firstUnique = FirstUnique(intArrayOf(2,3,5))
     assertEquals(2, firstUnique.showFirstUnique())
-    firstUnique.add(5);            // the queue is now [2,3,5,5]
+    firstUnique.add(5)           // the queue is now [2,3,5,5]
     assertEquals(2, firstUnique.showFirstUnique())
-    firstUnique.add(2);            // the queue is now [2,3,5,5,2]
+    firstUnique.add(2)            // the queue is now [2,3,5,5,2]
     assertEquals(3, firstUnique.showFirstUnique())
-    firstUnique.add(3);            // the queue is now [2,3,5,5,2,3]
+    firstUnique.add(3)            // the queue is now [2,3,5,5,2,3]
     assertEquals(-1, firstUnique.showFirstUnique())
-    firstUnique.add(3);            // the queue is now [2,3,5,5,2,3]
+    firstUnique.add(3)            // the queue is now [2,3,5,5,2,3]
     assertEquals(-1, firstUnique.showFirstUnique())
 }
 
