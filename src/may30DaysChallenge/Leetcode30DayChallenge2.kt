@@ -23,13 +23,10 @@ object Leetcode30DayChallenge2 {
 
     fun numJewelsInStones(J: String, S: String): Int {
         val jewelSet = HashSet<Char>()
-        var count = 0
         J.forEach { jewelSet.add(it) }
 
-        S.forEach {
-            if (jewelSet.contains(it)) count++
-        }
-
+        var count = 0
+        S.forEach { if (jewelSet.contains(it)) count++ }
         return count
     }
 }
