@@ -14,7 +14,7 @@ fun main(args: Array<String>) {
 object SquaresOfSortedArray {
 
     fun sortedSquares(A: IntArray): IntArray {
-        // O(logn)
+        // O(nlogn)
         val indexOfFirstPositive = binarySearchFirstPositive(A)
 
         // O(n)
