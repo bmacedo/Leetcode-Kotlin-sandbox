@@ -1,7 +1,5 @@
 package arrays101
 
-import kotlin.math.abs
-
 /**
  * Find All Numbers Disappeared in an Array
  *
@@ -24,7 +22,7 @@ object FindAllNumbersDisappearedInArray {
     fun findDisappearedNumbers(nums: IntArray): List<Int> {
         val output = mutableListOf<Int>()
         for (i in nums.indices) {
-            val value = abs(nums[i]) - 1
+            val value = Math.abs(nums[i]) - 1
             if (nums[value] > 0) nums[value] = -nums[value]
         }
         for (i in nums.indices) {
