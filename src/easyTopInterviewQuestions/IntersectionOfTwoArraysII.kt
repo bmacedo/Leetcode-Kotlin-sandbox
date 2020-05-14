@@ -21,6 +21,7 @@ fun main(args: Array<String>) {
 
 object IntersectionOfTwoArraysII {
 
+    // O(nlogn) time, O(n) space
     fun intersect(nums1: IntArray, nums2: IntArray): IntArray {
         nums1.sort()
         nums2.sort()
