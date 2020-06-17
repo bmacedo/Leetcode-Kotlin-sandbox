@@ -1,5 +1,12 @@
 package utils
 
+fun String.asCharMatrix(): Array<CharArray> = this.split(",\n", "\n")
+        .map { line ->
+            line.split(" ", ",", "]", "[")
+                    .map { it[0] }
+                    .toCharArray()
+        }.toTypedArray()
+
 fun String.asIntMatrix(): Array<IntArray> = this.split(",\n")
         .map { line ->
             line.split(",", "]", "[")
