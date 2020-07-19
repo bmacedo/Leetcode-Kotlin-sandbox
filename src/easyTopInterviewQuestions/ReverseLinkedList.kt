@@ -1,4 +1,4 @@
-package adhoc
+package easyTopInterviewQuestions
 
 import utils.ListNode
 import utils.toList

@@ -1,4 +1,4 @@
-package adhoc
+package easyTopInterviewQuestions
 
 /**
  * Fizz Buzz
