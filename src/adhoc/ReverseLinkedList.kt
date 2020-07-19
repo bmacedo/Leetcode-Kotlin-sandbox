@@ -4,6 +4,11 @@ import utils.ListNode
 import utils.toList
 import utils.toListNode
 
+/**
+ * Reverse Linked List
+ *
+ * Reverse a singly linked list.
+ */
 fun main(args: Array<String>) {
     val input = intArrayOf(1, 2, 3, 4, 5).toListNode()
     println(ReverseLinkedList.reverseList(input).toList())
