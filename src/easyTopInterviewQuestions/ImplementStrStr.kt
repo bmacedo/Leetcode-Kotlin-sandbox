@@ -1,5 +1,10 @@
 package easyTopInterviewQuestions
 
+/**
+ * Implement strStr().
+ *
+ * Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+ */
 fun main(args: Array<String>) {
     val haystack = "hello"
     val needle = "o"
