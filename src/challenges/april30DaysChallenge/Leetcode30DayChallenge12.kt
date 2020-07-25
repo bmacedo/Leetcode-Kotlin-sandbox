@@ -2,6 +2,8 @@ package challenges.april30DaysChallenge
 
 
 /**
+ * Last Stone Weight
+ *
  * We have a collection of stones, each stone has a positive integer weight.
  *
  * Each turn, we choose the two heaviest stones and smash them together.

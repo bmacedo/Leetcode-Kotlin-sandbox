@@ -1,5 +1,10 @@
 package challenges.april30DaysChallenge
 
+/**
+ * Group Anagrams
+ *
+ * Given an array of strings, group anagrams together.
+ */
 fun main(args: Array<String>) {
 //    val input = emptyArray<String>()
 //    val input = arrayOf("cab","tin","pew","duh","may","ill","buy","bar","max","doc")

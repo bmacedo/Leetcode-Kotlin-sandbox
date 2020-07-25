@@ -3,6 +3,8 @@ package challenges.april30DaysChallenge
 import java.util.*
 
 /**
+ * Min Stack
+ *
  * Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
  *
  * push(x) -- Push element x onto stack.

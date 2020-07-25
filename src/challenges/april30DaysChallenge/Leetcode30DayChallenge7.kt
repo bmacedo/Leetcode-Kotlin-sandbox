@@ -1,5 +1,8 @@
 package challenges.april30DaysChallenge
 
+/**
+ * Counting Elements
+ */
 fun main(args: Array<String>) {
 //    val input = intArrayOf(1,2,3)
 //    val input = intArrayOf(1,1,2,2)

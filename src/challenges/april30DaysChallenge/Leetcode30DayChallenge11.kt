@@ -6,6 +6,8 @@ import utils.root
 
 
 /**
+ * Diameter of Binary Tree
+ *
  * Given a binary root, you need to compute the length of the diameter of the root.
  * The diameter of a binary root is the length of the longest path between any two
  * nodes in a root. This path may or may not pass through the root.

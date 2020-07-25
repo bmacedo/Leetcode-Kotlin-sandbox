@@ -2,6 +2,8 @@ package challenges.april30DaysChallenge
 
 
 /**
+ * Perform String Shifts
+ *
  * You are given a string s containing lowercase English letters, and a matrix shift,
  * where shift(i) = [direction, amount]:
  *

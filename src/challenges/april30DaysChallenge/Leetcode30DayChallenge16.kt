@@ -2,6 +2,8 @@ package challenges.april30DaysChallenge
 
 
 /**
+ * Valid Parenthesis String
+ *
  * Given a string containing only three types of characters: '(', ')' and '*',
  * write a function to check whether this string is valid.
  *
