@@ -1,6 +1,12 @@
 package challenges.september30DaysChallenge
 
-
+/**
+ * Maximum XOR of Two Numbers in an Array
+ *
+ * Given an integer array nums, return the maximum result of nums[i] XOR nums[j], where 0 ≤ i ≤ j < n.
+ *
+ * Follow up: Could you do this in O(n) runtime?
+ */
 fun main(args: Array<String>) {
     val input = intArrayOf(3, 10, 5, 25, 2, 8)
     println(Day16.findMaximumXOR(input))
